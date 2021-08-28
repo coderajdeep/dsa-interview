@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Array is in non-decreasing order
+// Array is in non-increasing order
 int firstOccurr(int arr[], int n, int x) {
 	int low = 0, high = n-1, mid;
 	while(low<=high) {
@@ -20,7 +20,7 @@ int firstOccurr(int arr[], int n, int x) {
 	return -1;
 }
 
-// Array is in non-decreasing order
+// Array is in non-increasing order
 int lastOccurr(int arr[], int n, int x) {
 	int low = 0, high = n-1, mid;
 	while(low<=high) {

@@ -1,6 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Recursive approach
+void reverseArray(int arr[], int n) {
+    if(n==1 or n==0)
+        return;
+    swap(arr[0], arr[n-1]);
+    reverse(arr+1, n-1);
+}
+
 void Swap(int &a, int &b) {
     int t = a;
     a = b;

@@ -12,3 +12,15 @@ class Solution {
         }
     }
 };
+
+// Recursive method
+class Solution {
+    public:
+    void display(Node *head) {
+        if(!head) {
+            return;
+        }
+        cout<<head->data<<" ";
+        display(head->next);
+    }
+};
